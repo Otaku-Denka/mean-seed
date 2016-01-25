@@ -1,3 +1,3 @@
-export default ngModule => {
+module.exports = ngModule => {
 	require('./hello')(ngModule);
 };
