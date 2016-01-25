@@ -19,6 +19,8 @@
   "homepage": "https://github.com/Otaku-Denka/mean-seed#readme",
   "dependencies": {
     "angular": "^1.4.9",
+    "babel-cli": "^6.4.5",
+    "babel-loader": "^6.2.1",
     "express": "^4.13.4",
     "webpack": "^1.12.12",
     "webpack-dev-server": "^1.14.1"
