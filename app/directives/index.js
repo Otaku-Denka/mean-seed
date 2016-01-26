@@ -1,3 +1,4 @@
-module.exports = ngModule => {
-	require('./hello')(ngModule);
+import hello from './hello'
+export default ngModule => {
+  hello(ngModule)
 };
