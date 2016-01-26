@@ -1,5 +1,5 @@
-module.exports = function(ngModule){
-	ngModule.directive('hello',function(){
+export default (ngModule) => {
+	ngModule.directive('hello', () => {
 		return {
 			restrict: 'E',
 			scope: {},
