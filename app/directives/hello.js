@@ -1,5 +1,6 @@
 export default (ngModule) => {
 	ngModule.directive('hello', () => {
+		require('./hello.css');
 		return {
 			restrict: 'E',
 			scope: {},
