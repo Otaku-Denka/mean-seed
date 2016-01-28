@@ -3,7 +3,7 @@ export default (ngModule) => {
 		return {
 			restrict: 'E',
 			scope: {},
-			templateUrl: 'directives/hello.html',
+			template: require('./hello.html'),
 			controllerAs: 'vm',
 			controller: function(){
 				var vm = this;
