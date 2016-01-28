@@ -1,4 +1,9 @@
 export default (ngModule) => {
+
+	if (ON_TEST) {
+		require('./hello.test.js')(ngModule)
+	}
+
 	ngModule.directive('hello', () => {
 		require('./hello.css');
 		return {

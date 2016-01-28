@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "NODE_ENV=test karma start",
     "start": "node_modules/.bin/webpack-dev-server --content-base app"
   },
   "repository": {
@@ -19,12 +19,19 @@
   "homepage": "https://github.com/Otaku-Denka/mean-seed#readme",
   "dependencies": {
     "angular": "^1.4.9",
+    "angular-mocks": "^1.4.9",
     "babel": "^6.3.26",
     "babel-cli": "^6.4.5",
     "babel-core": "^6.4.5",
     "babel-loader": "^6.2.1",
     "css-loader": "^0.23.1",
     "express": "^4.13.4",
+    "karma": "^0.13.19",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-mocha": "^0.2.1",
+    "karma-webpack": "^1.7.0",
+    "path": "^0.12.7",
     "raw-loader": "^0.5.1",
     "style-loader": "^0.13.0",
     "stylus-loader": "^1.5.1",
