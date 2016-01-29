@@ -4,7 +4,7 @@ export default (ngModule) => {
 		require('./hello.test')(ngModule)
 	}
 
-	ngModule.directive('hello', () => {
+	ngModule.directive('hello', ($log) => {
 		require('./hello.css');
 		return {
 			restrict: 'E',
@@ -14,6 +14,7 @@ export default (ngModule) => {
 			controller: function(){
 				var vm = this;
 				vm.greeting = "Hello , Webpack";
+				$log.info('Try some info')
 			}
 		}
 	})
