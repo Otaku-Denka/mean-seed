@@ -1,7 +1,7 @@
 export default (ngModule) => {
 
 	if (ON_TEST) {
-		require('./hello.test.js')(ngModule)
+		require('./hello.test')(ngModule)
 	}
 
 	ngModule.directive('hello', () => {

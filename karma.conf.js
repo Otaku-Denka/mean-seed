@@ -1,6 +1,6 @@
 var path = require('path');
 var webpackConfig = require('./webpack.config');
-var entry = path.resolve(webpackConfig.context, webpackConfig.entry)
+var entry = path.resolve(webpackConfig.context, webpackConfig.entry);
 var preprocessors = {};
 preprocessors[entry] = ['webpack'];
 
@@ -15,6 +15,12 @@ module.exports = function(config) {
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['mocha','chai'],
+    plugins: [
+        require('karma-webpack'),
+        'karma-chai',
+        'karma-mocha',
+        'karma-chrome-launcher'
+    ],
 
 
     // list of files / patterns to load in the browser
@@ -67,11 +73,5 @@ module.exports = function(config) {
     // Concurrency level
     // how many browser should be started simultaneous
     concurrency: Infinity
-    plugins: [
-        require('webpack'),
-        'karma-chai',
-        'karma-mocha',
-        'karma-chrome-launcher'
-    ]
   })
 }
